@@ -1,0 +1,233 @@
+/* Grundläggande Återställning och Fonts */
+:root {
+    --primary-color: #5D544A; /* Djupbrun/Taupe */
+    --secondary-color: #B29D8A; /* Mjuk Beige */
+    --accent-color: #C28B6E; /* Rost/Koppar för accenter */
+    --text-dark: #333;
+    --text-light: #F9F7F5;
+    --bg-light: #F9F7F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+}
+
+/* --- Header och Navigation --- */
+
+.main-header {
+    background: var(--bg-light);
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 1rem 5%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* --- Hero Sektion --- */
+
+.hero {
+    background: url('spa_background.jpg') center/cover no-repeat; /* Du måste lägga till en egen bild här! */
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-light);
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Mörk överläggning */
+}
+
+.hero-content {
+    z-index: 10;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: var(--text-light); /* För att synas över bilden */
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background-color: #A36B51; /* Mörkare accent */
+    transform: translateY(-2px);
+}
+
+/* --- Allmänna Sektioner --- */
+
+.section {
+    padding: 80px 5%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h3 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: var(--accent-color);
+    margin: 10px auto 0;
+}
+
+/* --- Tjänster/Services Sektion --- */
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    border-top: 4px solid var(--secondary-color);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    color: var(--accent-color);
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+
+/* --- Kontakt Sektion --- */
+
+.contact {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#booking-form input,
+#booking-form textarea {
+    padding: 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    font-size: 1rem;
+    background-color: var(--bg-light);
+}
+
+#booking-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* --- Footer --- */
+
+.main-footer {
+    background: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
