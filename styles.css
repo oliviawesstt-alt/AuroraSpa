@@ -71,7 +71,8 @@ h1, h2, h3, h4 {
 /* --- Hero Sektion --- */
 
 .hero {
-    background: url('spa_background.jpg') center/cover no-repeat; /* Du måste lägga till en egen bild här! */
+    background: url('image-0a78434f-e9f4-44d7-980c-315acf3569c8.png') center/cover no-repeat;
+) center/cover no-repeat;
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -80,6 +81,7 @@ h1, h2, h3, h4 {
     color: var(--text-light);
     position: relative;
 }
+
 
 .hero::before {
     content: "";
