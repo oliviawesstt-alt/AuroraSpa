@@ -299,22 +299,22 @@ h1, h2, h3, h4 {
 }
 
 
-}
 
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
+
+
 
 .image-overlay {
-  background: rgba(0, 0, 0, 0.35);
-
+  background: rgba(0, 0, 0, 0.55); /* mörkare = mer lyx */
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 30px;
   width: 100%;
+  backdrop-filter: blur(2px); /* mjuk spa-känsla */
 }
+
+
 
 .image-overlay h2 {
   font-size: 2.5rem;
