@@ -154,12 +154,22 @@ h1, h2, h3, h4 {
 }
 
 /* --- Tjänster/Services Sektion --- */
+.section.services h3 {
+  text-align: center;
+}
 
 .service-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  max-width: 900px;   /* <-- detta gör dem mer inåt */
+  margin: 0 auto;     /* <-- centrerar hela raden */
+}
+
+.section.services h3 {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -189,11 +199,7 @@ h1, h2, h3, h4 {
 
 /* --- Kontakt Sektion --- */
 
-.contact {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-radius: 5px;
-}
+.
 
 .contact-info p {
     font-size: 1.1rem;
@@ -374,9 +380,9 @@ h1, h2, h3, h4 {
  margin-bottom: 120px; /* <-- LÄGG TILL DENNA RAD */
 }
 
-}
 
-}
+
+
 
 .gallery h3 {
   text-align: center;
@@ -420,3 +426,85 @@ h1, h2, h3, h4 {
   object-fit: cover;
   border-radius: 12px;
 }
+/* ==== FIXA KONTAKTSEKTIONENS STORLEK ==== */
+#contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Gör själva boxen mindre */
+#contact .contact-form,
+#contact .booking-form {
+  max-width: 420px;
+}
+
+/* Mindre inputs */
+#contact input,
+#contact textarea {
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+/* Mindre knapp */
+#contact button {
+  padding: 10px 20px;
+  font-size: 0.95rem;
+}
+/* ===== FIX KONTAKTSEKTION ===== */
+
+.section.contact {
+  background: linear-gradient(135deg, #e8dccb, #d6c2a5);
+  padding: 60px 40px;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+
+.section.contact h3 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #4a3b2a;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: #3f3326;
+}
+
+/* FORMULÄR */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #cbb89d;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #bfa37a;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #a88c63;
+}
+
