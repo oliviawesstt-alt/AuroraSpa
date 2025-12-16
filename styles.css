@@ -233,3 +233,96 @@ h1, h2, h3, h4 {
     padding: 20px 0;
     font-size: 0.9rem;
 }
+/* IMAGE BREAK SECTION */
+.image-break {
+    position: relative;
+    background-image: url("spa-break.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-overlay {
+    background: rgba(0, 0, 0, 0.45);
+
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.image-overlay h2 {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.image-overlay p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+/* IMAGE BREAK SECTION */
+.image-break {
+  position: relative;
+  background-image: url("spa-break.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 60vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.image-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.image-overlay p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+
+}
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-overlay {
+  background: rgba(0, 0, 0, 0.35);
+
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.image-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.image-overlay p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
