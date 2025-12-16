@@ -508,3 +508,27 @@ h1, h2, h3, h4 {
   background-color: #a88c63;
 }
 
+/* ===== Hero CTA-knapp ===== */
+.hero-btn {
+  display: inline-block;
+  margin-top: 25px;
+
+  background-color: #d6b27c; /* varm spa-färg */
+  color: #ffffff;
+  text-decoration: none;
+
+  padding: 14px 36px;
+  border-radius: 30px;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #c19a5b;
+  transform: translateY(-2px);
+}
