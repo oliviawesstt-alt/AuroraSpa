@@ -326,3 +326,44 @@ h1, h2, h3, h4 {
   font-size: 1.2rem;
   opacity: 0.9;
 }
+/* CONTACT SECTION */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #bfa37c;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #a88c68;
+}
