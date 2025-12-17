@@ -614,7 +614,57 @@ h1, h2, h3, h4 {
     display: flex;
   }
 }
-/* =========================
+
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .hero-content p {
+    font-size: 1rem;/* =========================
+   MOBILANPASSNING
+   ========================= */
+@media (max-width: 768px) {
+
+  /* HERO */
+  .hero {
+    min-height: 70vh;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-content h2 {
+    margin-bottom: 25px;
+  }
+
+  .hero-btn {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+  }
+
+  /* NAV */
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  /* SERVICES */
+  .service-cards {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  /* CONTACT */
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+ /* =========================
    MOBILANPASSNING
    ========================= */
 @media (max-width: 768px) {

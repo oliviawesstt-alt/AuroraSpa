@@ -10,18 +10,5 @@ document.addEventListener('DOMContentLoaded', function() {
         contactSection.scrollIntoView({ behavior: 'smooth' });
     });
 
-    // Hantera formulärinlämning (enkel alert, ingen riktig backend här)
-    const bookingForm = document.getElementById('booking-form');
     
-    bookingForm.addEventListener('submit', function(event) {
-        event.preventDefault(); // Förhindra standardformulärinlämning
-
-        // I en riktig applikation skulle du skicka data till en server här.
-        const name = bookingForm.querySelector('input[type="text"]').value;
-
-        alert(`Tack, ${name}! Din bokningsförfrågan har skickats. Vi återkommer snart för att bekräfta din tid.`);
-        
-        // Rensa formuläret
-        bookingForm.reset();
-    });
 });
